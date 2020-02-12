@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".AddVehicle">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/MyTextInputLayout"
+                >
+
+                <EditText
+                    android:id="@+id/vehicleType"
+                    style="@style/MyEditTextstyle2"
+                    android:hint="Vehicle Type"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/MyTextInputLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="80dp">
+
+                <EditText
+                    android:id="@+id/model"
+                    style="@style/MyEditTextstyle2"
+                    android:hint="Model" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/MyTextInputLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="80dp">
+
+                <EditText
+                    android:id="@+id/manufacturer"
+                    style="@style/MyEditTextstyle2"
+                    android:hint="Manufacturer"
+                    android:inputType="text"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/MyTextInputLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="80dp">
+
+                <EditText
+                    android:id="@+id/registrationNum"
+                    style="@style/MyEditTextstyle2"
+                    android:hint="Registration Number"
+                    android:inputType="number"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                style="@style/MyTextInputLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="80dp">
+
+                <EditText
+                    android:id="@+id/registrationState"
+                    style="@style/MyEditTextstyle2"
+                    android:hint="Registration State"
+                    android:inputType="text"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                style="@style/MyTextInputLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="80dp">
+
+                <EditText
+                    android:id="@+id/color"
+                    style="@style/MyEditTextstyle2"
+                    android:hint="Color"
+                    android:inputType="text"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:backgroundTint="@color/colorSecondary"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_check"
+        android:onClick="registerVehicle"
+        />
+
+</android.support.constraint.ConstraintLayout>

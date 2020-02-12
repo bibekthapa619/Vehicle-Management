@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "135527710824",
+    "firebase_url": "https://vechicle-manager.firebaseio.com",
+    "project_id": "vechicle-manager",
+    "storage_bucket": "vechicle-manager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135527710824:android:68aca912be02e825",
+        "android_client_info": {
+          "package_name": "com.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135527710824-d9nh0i0he2jg8imf7ltcj1jfllrto3rk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOK_WxZZT32H-oSiQVfqSF7DitY9a5HuY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

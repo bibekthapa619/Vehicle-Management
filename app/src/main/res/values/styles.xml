@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppSecondTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorSecondary</item>
+        <item name="colorPrimaryDark">@color/colorSecondaryDark</item>
+        <item name="colorAccent">#000000</item>
+    </style>
+
+    <style name="MyEditTextstyle">
+        <item name="android:textColorHint">@color/textColorPrimary</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:background">@drawable/shape</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">307dp</item>
+
+    </style>
+
+    <style name="MyEditTextstyle2">
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:background">@drawable/bottomborder</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">match_parent</item>
+
+    </style>
+    <style name="MyEditTextstyle3">
+        <item name="android:textColorHint">@color/textColorPrimary</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:background">@drawable/bottomborder</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">100dp</item>
+
+    </style>
+
+    <style name="MyTextInputLayout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+
+
+    <style name="MyButton">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:background">@drawable/buttonshape</item>
+        <item name="android:layout_width">307dp</item>
+        <item name="android:layout_height">45dp</item>
+
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorSecondary</item>
+        <item name="colorPrimaryDark">@color/colorSecondaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

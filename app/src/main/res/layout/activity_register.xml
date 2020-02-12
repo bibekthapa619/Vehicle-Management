@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/background"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+      >
+        <android.support.design.widget.TextInputLayout style="@style/MyTextInputLayout">
+
+            <EditText
+                android:id="@+id/firstName"
+                style="@style/MyEditTextstyle2"
+                android:hint="FirstName"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout style="@style/MyTextInputLayout">
+
+            <EditText
+                android:id="@+id/lastName"
+                style="@style/MyEditTextstyle2"
+                android:hint="LastName"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout style="@style/MyTextInputLayout">
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/MyEditTextstyle2"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout style="@style/MyTextInputLayout">
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/MyEditTextstyle2"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout style="@style/MyTextInputLayout">
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                style="@style/MyEditTextstyle2"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/register"
+            style="@style/MyButton"
+            android:layout_width="match_parent"
+            android:text="Register"
+            android:onClick="registerUser"
+            />
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

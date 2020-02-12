@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AddVehicle"
+            android:label="Add Vehicle"
+            android:theme="@style/AppSecondTheme" />
+        <activity
+            android:name=".Drawer"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:label="Register"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".EditVehicle"
+            android:theme="@style/AppSecondTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".VehiclePanel"
+            android:theme="@style/AppSecondTheme" />
+        <activity
+            android:name=".ServiceDetails"
+            android:theme="@style/AppSecondTheme" />
+        <activity
+            android:name=".FuelDetails"
+            android:theme="@style/AppSecondTheme" />
+        <activity
+            android:name=".AccidentDetails"
+            android:theme="@style/AppSecondTheme" />
+        <activity
+            android:name=".PermitDetails"
+            android:theme="@style/AppSecondTheme" />
+        <activity
+            android:name=".InsuranceDetails"
+            android:theme="@style/AppSecondTheme" />
+        <activity
+            android:name=".OdometerUpdate"
+            android:theme="@style/AppSecondTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".AddService"
+            android:theme="@style/AppSecondTheme" />
+        <activity
+            android:name=".AddRefuel"
+            android:theme="@style/AppSecondTheme" />
+        <activity
+            android:name=".AddAccident"
+            android:theme="@style/AppSecondTheme" />
+        <activity
+            android:name=".AddPermit"
+            android:theme="@style/AppSecondTheme" />
+        <activity
+            android:name=".AddInsurance"
+            android:theme="@style/AppSecondTheme" />
+        <activity
+            android:name=".AddRemainder"
+            android:theme="@style/AppSecondTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <receiver android:name="dataTypes.NotificationReceiver">
+            <intent-filter>
+                <action android:name="NOTIFICATION_SERVICE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ViewService"
+            android:theme="@style/AppSecondTheme" />
+        <activity
+            android:theme="@style/AppSecondTheme"
+            android:name=".Expenses"></activity>
+    </application>
+
+</manifest>
